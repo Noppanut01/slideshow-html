@@ -5,12 +5,11 @@
 }
 
 .container{
-    width: 960px;
+    width: 954px;
     height: 100%;
-    text-align: center;
     border: 2px solid red;
     position: relative;
-    display: none;
+    /* display: none; */
 }
 
 .slideshow img{
@@ -20,12 +19,39 @@
 }
 .dots{
     display: flex;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .dot{
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: slategray;
+    background-color: white;
     margin: 1px;
+}
+
+.next, .prev{
+    position: absolute;
+    top: 50%;
+    background-color: (0, 0, 0, 0.5);
+    color: white;
+    font-size: 2.5rem;
+    padding: 3px;
+    transition: 0.5s;
+}
+
+.prev{
+    left:3px;
+}
+
+.next{
+    right: 3px;
+}
+
+.next:hover, .prev:hover{
+    background-color: #333;
+    color: white;
 }
