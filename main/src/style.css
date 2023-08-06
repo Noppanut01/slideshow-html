@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 960px;
+    height: 100%;
+    text-align: center;
+    border: 2px solid red;
+    position: relative;
+    display: none;
+}
+
+.slideshow img{
+    width: 950px;
+    height: 540px;
+    object-fit: cover;
+}
+.dots{
+    display: flex;
+}
+
+.dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: slategray;
+    margin: 1px;
+}
